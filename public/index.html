@@ -3,121 +3,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DriveThru - Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right top, #ff7e5f, #feb47b);
+      background: linear-gradient(135deg, rgba(255, 115, 115, 0.4), rgba(115, 138, 255, 0.4));
       backdrop-filter: blur(10px);
-      color: #fff;
       min-height: 100vh;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 2rem;
     }
     header {
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 1rem 2rem;
-      border-radius: 16px;
-      margin-bottom: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+    nav {
+      margin-top: 2rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    .contact {
+      margin-top: 3rem;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      width: 100%;
       text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-    h2 {
+    .contact h2 {
+      margin-bottom: 1rem;
       font-size: 1.5rem;
-      margin-top: 0.5rem;
     }
-    .container {
-      background-color: rgba(255, 255, 255, 0.15);
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-      width: 90%;
-      max-width: 800px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: #fff;
-      color: #ff7e5f;
-      font-weight: bold;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #ffd9c1;
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
+    .contact p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to <strong>DriveThru</strong></h1>
-    <h2>Sri Lanka's fastest growing goods delivery service</h2>
-  </header>  <div class="container">
-    <p>Need to grab groceries, meals, or anything from the store but don’t have the time? Let our riders take care of it for you! Just locate yourself, pick a rider, and send your order.</p>
-    <br/>
-    <a href="/services.html" class="btn">Explore Services</a>
-  </div>  <footer>
-    &copy; 2025 DriveThru. All rights reserved.
-  </footer>
-</body>
-</html><!-- Contact Page: contact.html --><!-- Create a separate file for contact us --><!-- contact.html --><!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - DriveThru</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right top, #84fab0, #8fd3f4);
-      backdrop-filter: blur(10px);
-      color: #000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .contact-box {
-      background: rgba(255, 255, 255, 0.3);
-      padding: 2rem;
-      border-radius: 20px;
-      width: 100%;
-      max-width: 500px;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-    .contact-info {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <h1>Contact Us</h1>
-  <div class="contact-box">
-    <p class="contact-info">Email: <a href="mailto:nadeejaknirmala@gmail.com">nadeejaknirmala@gmail.com</a></p>
-    <p class="contact-info">Phone: <a href="tel:+94770078086">+94 77 007 8086</a></p>
-  </div>
+    <h1><strong>Welcome to DriveThru</strong></h1>
+    <p>Sri Lanka's fastest growing goods delivery service</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+    <a href="#">Rider Login</a>
+    <a href="#">Map</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: nadeejaknirmala@gmail.com</p>
+    <p>Phone: +94 77 007 8086</p>
+  </section>
 </body>
 </html>
