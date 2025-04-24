@@ -13,7 +13,7 @@ const Contact = () => {
       <p>Feel free to reach out with any inquiries or feedback!</p>
       <div className="contact-info">
         <p>Email: nadeejaknirmala@gmail.com</p>
-        <p>Phone:‪+94 77 007 8086‬</p>
+        <p>Phone: +94 77 007 8086</p>
       </div>
     </motion.section>
   );
