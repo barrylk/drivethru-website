@@ -1,15 +1,24 @@
-import React from "react";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-export default function Services() {
+const Services = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6">Our Services</h2>
-      <ul className="space-y-4">
-        <li>Grocery Pickup & Delivery</li>
-        <li>Meal & Drink Delivery</li>
-        <li>Pharmacy Runs</li>
-        <li>Custom Item Pickup</li>
+    <motion.section
+      className="services"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+    >
+      <h2>Our Services</h2>
+      <p>We deliver food, drinks, groceries, and more to your doorstep using motorbike delivery. Fast, reliable, and efficient.</p>
+      <ul className="service-list">
+        <li>Food Delivery</li>
+        <li>Grocery Shopping</li>
+        <li>Drink Delivery</li>
+        <li>And More!</li>
       </ul>
-    </div>
+    </motion.section>
   );
-}
+};
+
+export default Services;
